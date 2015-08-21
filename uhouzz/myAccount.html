@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="format-detection" content="telephone=no" />
+		<title>个人中心</title>
+		<link rel="stylesheet/less" type="text/css" href="less/reset.less">
+		<link rel="stylesheet/less" type="text/css" href="less/header.less">
+		<link rel="stylesheet/less" type="text/css" href="less/myAccount.less">
+		<script type="text/javascript" src="js/less.js"></script>
+
+	</head>
+<body>
+	<header>
+		<dl class="wrapper topBar">
+			<dt><a href="#"><img src="images/logo.png"></a></dt>
+			<dt><input type="text" placeholder="您要去哪里？（请输入城市或者学校名称）"><input type="button" value="搜索"></dt>
+			<dd><a href="">登录</a><a href="">注册</a><a href="">帮助</a></dd>   
+		</dl>
+	</header>
+	<div class="wrapper martop20">
+		<div class="slideleft">
+			 <div class="photo">
+			 	<img src="http://fpoimg.com/100x100">
+			 	<p>XXXX@163.com</p>
+			 </div>
+		<ul>
+			<li class="hover"><a href="">我的账户</a></li>
+			<li><a href="">我的卡券</a>
+				<div class="sub">
+					<a href="">代金券</a>
+					<a href="">免费券</a>
+				</div>
+			</li>
+			<li><a href="">我的钱包</a>
+				<div class="sub">
+					<a href="">平台转出</a>
+					<a href="">网银转出</a>
+				</div>
+			</li>
+			<li><a href="">我的订单</a></li>
+			<li><a href="">我的收藏</a></li>
+			<li><a href="">我的评论</a></li>
+			<li><a href="">安全设置</a></li>
+			
+		</ul>	 
+		</div>
+		<div class="slideRight myAccount">
+			<div class="title">编辑个人资料</div>
+			<div class="info">
+				<dl>
+					<dt>头像</dt>
+					<dd class="photo"></dd>
+					<dd class="upload">
+						<label>本地照片<input type="file" value="本地照片" /></label>
+						<p>仅支持JPG、PNG格式，文件小于3M。</p>
+					</dd>
+				</dl>
+				<ul>
+					<li><span>昵称</span><input type="text" ></li>
+					<!--<li><span>昵称 </span><span class="text">花千骨</span></li>-->
+					<li class="sex">
+						<span>性别</span>
+						<label>
+							<select>
+							<option>男</option>
+							<option>女</option>
+						</select> 
+						</label>	
+					</li> 
+					<!--<li class="sex">
+						<span>性别</span>
+						<span class="text">女</span>						
+					</li> -->
+					<li class="email">
+						<span>邮箱</span>
+						<input type="text" />
+						<span class="bt">更改邮箱</span>
+						<p class="error">邮箱格式错误</p>
+					</li>
+					<!--<li class="email">
+						<span >邮箱</span>
+						<span class="text">43345543@qq.com</span>
+						<span class="bt">更改邮箱</span>
+					</li>-->
+					<li class="tel">
+						<span>手机 </span>
+						<p><span>+86</span><input type="text" /></p>
+						<span class="bt">发送验证码</span>
+					</li>
+					<li class="code">
+						<span> </span>
+						<input type="text" placeholder="输入您的验证码" />
+						<span class="bt">验证</span>
+						<p class="error">验证码错误</p>
+					</li>
+					<li class="country">
+						<span>国家</span>
+						<label>
+							<select>
+								<option>选择您的国籍</option>
+								<option>英国</option>
+								<option>美国</option>
+							</select> 
+						</label>	
+					</li> 
+					<!--<li class="country">
+						<span >国家</span>
+						<span class="text">美国</span>
+					</li>-->
+					<li class="introduce">
+						<span>自我介绍</span>						
+						<textarea rows="5" maxlength="500" placeholder="您可以告诉我们您喜欢什么不喜欢什么，帮助我们为您推荐更适合的房源信息"></textarea>
+						<!--<p class="error">邮箱格式错误</p>-->
+						
+					</li>
+					<li class="bt_save"><a href="">保存</a></li>
+				</ul> 
+			</div>
+		</div>
+	</div>
+	<div class="popWindow_bg">
+		<div class="popWindow popAccount">
+			<img src="images/ico_ok.png">
+			<p>发送邮件成功</p>
+			<p>邮件已发送到邮箱xxx@126.com</p>
+			<p>请您在24小时内点击邮件中的链接进行验证</p>
+			<a href="">立即查看邮件</a>
+			<p>稍后验证</p>
+		</div>
+	</div>
+	
+</body>
+</html>

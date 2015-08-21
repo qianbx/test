@@ -1,0 +1,111 @@
+@red:#ff5a5f;
+@blue:#79cccd;
+@color666:#666;
+@color999:#999;
+@colorfff:#fff;
+@colore8:#e8e8e8;
+@colorfa:#fafafa;
+//我的钱包样式
+.myPurseInto{
+    .balance{
+        float: right;
+        display: table;
+        padding: 0 16px;
+        margin: -38px 0 0;
+        span{
+            display: inline-block;
+            display: table-cell;
+            vertical-align: middle;
+            padding: 0 5px;
+        }
+        .price{
+            color: @red;
+            font-size: 36px;
+            font-family: arial;
+        }
+    }
+    dl{
+        padding:19px 19px 0;
+        dt{
+            margin: 10px 0;
+            font-size: 20px;
+            label{
+              background: url(../images/ico_radio.png) no-repeat top left;  
+              background-position: 0 0;
+            }
+            .hover{
+                  background-position: 0 -26px;
+              }
+            
+            span{
+                font-size: 14px;
+                margin: 0 0 0 27px;
+            }
+            input{
+                margin: 0 10px 0 0;
+                width: 16px;
+                opacity: 0;
+                display: inline-block;
+                
+            }
+        }
+        dd{
+            padding: 10px 10px 20px;
+            overflow: hidden;
+            img{
+                display:block;
+                width: 156px;
+                height: 58px;
+                border: 1px solid @colorfff;
+            }
+            a{
+                float: left;
+                border: 1px solid @colore8;
+                cursor: pointer;
+            }
+            .hover{
+                border: 1px solid @red;
+                img{
+                   border: 1px solid @red; 
+                }
+            }
+        }
+    }
+    .platform{
+        dd{   
+            border-bottom: 1px solid @colore8;
+        }
+        a{
+           margin: 10px 17px; 
+        }   
+    }
+    .bank{
+        clear: left;
+        a{
+            margin: 10px;
+        }
+    }
+    .bt{
+           width: 400px;
+           height: 60px;
+           line-height: 60px;
+           border-radius: 3px;
+           text-align: center;
+           color: @colorfff;
+           background: @red;
+           cursor: pointer;
+           margin: 30px auto;
+           input{
+               width: 100%;
+               height: 100%;
+               font-size: 20px;   
+               border: 0;
+               color: @colorfff;
+               cursor: pointer;
+               background: transparent;
+           }
+       }
+    
+}
+
+

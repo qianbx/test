@@ -1,0 +1,136 @@
+@red:#ff5a5f;
+@blue:#79cccd;
+@color666:#666;
+@color999:#999;
+@colorfff:#fff;
+@colore8:#e8e8e8;
+@colorfa:#fafafa;
+//我的钱包样式
+.myPurse{
+    background: none;
+    border: 0;
+    .title{
+        background: @colorfff;
+        border: 1px solid @colore8;
+    }
+   .amount{
+       padding: 36px 30px;
+       background: @colorfff;
+        border: 1px solid @colore8;
+        border-top: 0;
+       overflow: hidden;
+       dt{
+           float: left;
+           span{
+               display: inline-block;
+               color: @red;
+               padding: 0 10px;
+               font-family: arial;
+               font-size: 36px;
+               
+           }
+       }
+       dd{
+           float: right;
+           a{
+               display: inline-block;
+               width: 100px;
+               height: 45px;
+               line-height: 45px;
+               font-size: 16px;
+               color: @colorfff;
+               border-radius: 3px;
+               text-align: center;
+           }
+           a:first-child{
+               background: @red;
+               margin:0 20px 0 0;
+           }
+           a:last-child{
+               background: @blue;
+           }
+       }
+    }
+    //交易明细
+    .content{
+        margin: 20px 0 0;
+        background: @colorfff;
+        border: 1px solid @colore8; 
+        overflow: hidden;
+        .time {
+            width: 120px;
+        }
+        .name{
+            width: 227px;
+            border-left: 1px solid @colore8;
+        }
+        .orderNum{
+            width:190px;
+            border-left: 1px solid @colore8;
+        }
+        .price{
+            width: 120px;
+            border-left: 1px solid @colore8;
+        }
+        .state{
+            width: 104px;
+            border-left: 1px solid @colore8;
+        }
+        .totalNumber{
+            padding: 10px 15px;
+            font-size: 16px;
+            span{
+                float: right;
+            }
+        }
+        .title{
+            border-left: 0;
+            border-right: 0;
+            height: 39px;
+            line-height: 39px;
+            padding: 0;
+            span{
+                float: left;
+                display: block;
+                text-align: center;
+                font-size: 14px;
+                font-weight: bold;
+                background: none;
+            }
+            
+        }
+        .details{
+            li{
+                display: table;
+                border-bottom: 1px solid @colore8;
+                span{
+                    display: table-cell;
+                    text-align: center;
+                    padding: 15px 0;
+                    height: 50px;
+                    font-size: 12px;
+                    vertical-align: middle;
+                }
+                .time{
+                    padding: 15px 22px;
+                    width: 76px;
+                }
+            }
+        }
+        .pages{
+            padding: 30px;
+            text-align: center;
+            a{
+                display: inline-block;
+                border: 1px solid @colore8;
+                padding: 5px 15px;
+                margin: 0 3px;
+                color: @color999;
+            }
+            a:hover, .hover{
+                background: @colore8;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,120 @@
+@red:#ff5a5f;
+@blue:#79cccd;
+@color666:#666;
+@color999:#999;
+@colorfff:#fff;
+@colore8:#e8e8e8;
+@colorfa:#fafafa;
+
+//我的钱包样式
+.methods{
+    display:table;
+    margin: 20px 15px 20px 80px;
+    span, img, input{
+        display: table-cell;
+        vertical-align: middle;
+    }
+    i{
+        font-style: normal;
+        color: @red;
+        font-weight: bold;
+    }
+    img{
+        display: block;
+        width:156px;
+        height: 58px;
+        border: 1px solid @colore8;
+        margin: 0 0 0 20px;
+    }
+    input{
+        width: 340px;
+        margin: 0 10px 0 20px;
+        padding: 13px 5px;
+        border: 1px solid @colore8;
+    }
+    span:first-child{
+        width: 56px;
+    }
+    
+}
+.date span:first-child, .tipsPassword span:first-child{
+    display: inline-block;
+    margin: 0 20px 0 0;
+}
+.tips{
+    clear: both;
+    padding: 0 0 0 159px;
+    margin-top: -10px;
+        
+}
+.tipsPassword{
+    color: @color999;
+    a{
+        color: @red;
+    }
+}
+//底部按钮样式
+.bt{
+       width: 400px;
+       height: 60px;
+       line-height: 60px;
+       border-radius: 3px;
+       text-align: center;
+       color: @colorfff;
+       background: @red;
+       cursor: pointer;
+       margin: 30px 0 0 157px;
+       input{
+           width: 100%;
+           height: 100%;
+           font-size: 20px;   
+           border: 0;
+           color: @colorfff;
+           cursor: pointer;
+           background: transparent; 
+       }
+}
+//弹出窗口样式
+.wechatPay{
+    width: 810px;
+    .title{
+        height: 50px;
+        line-height: 50px;
+        padding: 0 30px;
+        background: @colore8;
+        dt{
+           float: left;
+           font-size: 20px; 
+        }
+        dd{
+            float: right;
+            span:first-child{
+                color: @red;
+                font-size: 20px;
+            }
+            span:last-child{
+                display: inline-block;
+                font-size: 20px;
+                color: #a4a4a4;
+                margin: 0 0 0 10px;
+            }
+        }
+    }
+    .content{
+        padding: 50px 110px;
+    }
+}
+.grey{
+    background: @color999;
+}
+.modify{
+    margin: 5px 0 5px 330px;
+    a{
+        color: @color666;
+    }
+}
+
+
+
+
+

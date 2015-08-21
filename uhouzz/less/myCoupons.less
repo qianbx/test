@@ -1,0 +1,195 @@
+@red:#ff5a5f;
+@blue:#79cccd;
+@color666:#666;
+@color999:#999;
+@colorfff:#fff;
+@colore8:#e8e8e8;
+@colorfa:#fafafa; 
+//我的免费体验券
+.myCoupons{
+  
+    .couponsTitle{
+        height: 56px;
+        line-height: 56px;
+        padding: 0 60px;
+        li{
+           margin: 0 60px;
+           float: left; 
+           width: 100px; 
+           text-align: center;
+        }
+        .hover{
+            border-bottom: 4px solid @red;
+        }
+    }
+    .content{
+        float: left;
+        border-top: 1px solid @colore8;
+        border-bottom: 1px solid @colore8;
+        margin: 0 15px 0;
+        
+        span, a{
+            display: block;
+        }
+        li{
+           float: left;
+           width: 220px; 
+           margin: 30px 15px;
+           h6{
+               color: @color999;
+               height:35px;
+               line-height: 35px;
+               padding: 0 15px;
+               background: @colore8;
+               span{
+                 display: inline-block;
+                 float: right;
+                 cursor: pointer;
+                }  
+           }
+           img{
+               margin: 0 16px;
+               padding: 25px 0;
+               border-bottom: 1px solid @colore8;
+           }
+           .logo{
+               overflow: hidden;
+               border: 1px solid @colore8;
+               border-top: 0;
+               border-bottom: 0;
+               text-align: center;
+               span:nth-child(2){
+                   font-size: 20px;
+                   line-height: 32px;
+                   margin: 5px 0;
+               }
+               span:last-child{
+                   font-size: 14px;
+                   line-height: 32px;
+                   margin: 3px  0;
+               }
+           }
+           .couponExpired{  
+               background: url(../images/couponExpired_bg.png) no-repeat;
+           }
+           p:last-child{
+                width: 220px;
+               height: 57px;
+               line-height: 57px;
+               color: @colorfff;
+               font-size: 20px;
+               text-align: center;
+           }
+             .blue{
+                background: @blue;
+              }
+            .used{
+                background: @color999;
+            }
+            .expired{
+                background: @colore8;
+            }
+        }
+    }
+    .introduce{
+        clear: left;
+        padding:10px 30px 20px;
+        h6{
+            padding: 10px 0;
+            font-size: 14px;
+        }
+        p{
+            color: @color999;
+            line-height: 23px;
+        }
+    }
+
+}
+#returnCash{
+    border:0;
+    p{
+        margin: 25px 0 0 30px;
+    }
+    li{
+        
+        h6{
+            font-size: 14px;
+            font-weight: normal;
+        }
+        p{
+            margin: 0;
+        }
+        .price{
+            display: table;
+            color: @red;
+            padding: 5px 16px;
+            em, i{
+                display: table-cell;
+                vertical-align: middle;
+            }
+            i{
+                display: block;
+                color: @red;
+                font-style: normal;
+            }
+            i:first-child{
+                font-size: 20px;
+            }
+            em{
+                font-size: 40px;
+                font-style: normal;
+                font-family: arial;
+                margin: 0 15px 0 0;
+                &:before{
+                    display: inline-block;
+                    content: '￥';
+                    width: 20px;
+                    height: 16px;
+                    font-size: 20px;
+                }
+            }
+            i:nth-child(2){
+                position: absolute;
+                width: 6px;
+                height: 26px;
+                margin: 0 0 0 15px;
+                background: url(../images/ico_arrow.png) no-repeat  center;
+            }
+            i:nth-child(3){
+                font-size:14px;
+                height: 26px;
+                line-height: 26px;
+                border-radius: 3px;
+                padding: 0 5px;
+                border:1px solid @red;
+                margin: 0 0 0 20px;
+                
+            }
+        }
+        .date{
+            margin: 0 16px;
+            border-bottom: 1px solid @colore8;
+        }
+        .grey{
+            -webkit-filter: grayscale(100%);
+            -moz-filter: grayscale(100%);
+            -ms-filter: grayscale(100%);
+            -o-filter: grayscale(100%); 
+            filter: grayscale(100%);
+            filter: gray;
+            color: @color999;
+        }
+    }
+    .state{
+        display: block;
+        font-size: 16px;
+        border: 1px solid @colore8;
+        border-top: 0;
+        padding: 15px 0;
+        color: @color999;
+        text-align: center;
+    }
+    .red{
+        color: @red;
+    }
+}
